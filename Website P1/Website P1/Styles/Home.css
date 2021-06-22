@@ -1,0 +1,441 @@
+/*By Pedro Tavares, Kelvin Clark and Artem Basok */
+
+/* Global styles applied to all screen sizes */
+
+/* CONTAINER THAT HOLDS ALL CONTENT ON PAGE */
+#container {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    /*border: 2px solid red;*/
+    background-color: black;
+    transition: 4s;
+    position: fixed;
+    left: 0;
+    top: 0;
+    /*min-height: 600px;*/
+}
+
+/* Intro scene of page */
+
+#bgSketch {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#introSceneb1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    transition: 2s;
+}
+
+#introScene {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+#introSceneText {
+    position: absolute;
+    left: 44%;
+    top: 46%;
+    font-family: Helvetica75, sans-serif;
+    font-size: 38px;
+    opacity: 0;
+    transition: 2s;
+}
+
+
+/* desktop version */
+
+@media only screen and (min-width: 760px) {
+
+    /* AREA OF MENU INTERACTIVITY */
+    #interactionArea {
+        /*border: 3px solid blue;*/
+        position: absolute;
+        width: 20vw;
+        height: 36vh;
+        left: 40vw;
+        top: 30vh;
+        transition: 1s;
+        overflow: hidden;
+        visibility: visible;
+    }
+
+    #interactionAreaMobile {
+        display: none;
+        visibility: hidden;
+    }
+
+    /* CANVAS STYLES */
+    #logoSketch {
+        position: fixed;
+        left: 43%;
+        top: 35%;
+        width: 20vw;
+        height: auto;
+        transition: 0.5s;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    /* MENU ICON STYLES */
+    #menuIcon1 {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transition: 1s;
+        opacity: 1;
+    }
+
+    #menuIcon1 img {
+        opacity: 1;
+        transition: 1s;
+    }
+
+    #sobreDAT {
+        font-family: Helvetica75, sans-serif;
+        font-size: 2vw;
+        transition: 1s;
+        opacity: 0;
+        top: 40%;
+        left: 1.4%;
+        position: absolute;
+    }
+
+    #sobreDAT a {
+        text-decoration: none;
+        color: black;
+        transition: 0.5s;
+    }
+
+    #sobreDAT a:hover {
+        text-decoration: none;
+        color: gray;
+    }
+
+    #menuIcon1 img:hover {
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    /**/
+    #menuIcon2 {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transition: 1s;
+        opacity: 1;
+    }
+
+    #menuIcon2 img {
+        opacity: 1;
+        transition: 1s;
+    }
+
+    #edicao2018 {
+        font-family: Helvetica75, sans-serif;
+        font-size: 2vw;
+        transition: 1s;
+        opacity: 0;
+        top: 40%;
+        left: 0.5%;
+        position: absolute;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        transition: 3s;
+    }
+
+    #menuIcon2 img:hover {
+        opacity: 0;
+        transition: 3s;
+    }
+
+    /**/
+    #menuIcon3 {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transition: 1s;
+        opacity: 1;
+    }
+
+    #menuIcon3 img {
+        opacity: 1;
+        transition: 1s;
+    }
+
+    #local {
+        font-family: Helvetica75, sans-serif;
+        font-size: 2vw;
+        transition: 1s;
+        opacity: 0;
+        top: 40%;
+        left: 6.8%;
+        position: absolute;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        transition: 3s;
+    }
+
+    #menuIcon3 img:hover {
+        opacity: 0;
+        transition: 3s;
+    }
+
+    /**/
+    #menuIcon4 {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transition: 1s;
+        opacity: 1;
+    }
+
+    #menuIcon4 img {
+        opacity: 1;
+        transition: 1s;
+    }
+
+    #intervenientes {
+        font-family: Helvetica75, sans-serif;
+        font-size: 2vw;
+        transition: 1s;
+        opacity: 0;
+        top: 40%;
+        left: -1%;
+        position: absolute;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        transition: 3s;
+    }
+
+    #menuIcon4 img:hover {
+        opacity: 0;
+        transition: 3s;
+    }
+
+    /**/
+    #menuIcon5 {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transition: 1s;
+        opacity: 1;
+    }
+
+    #menuIcon5 img {
+        opacity: 1;
+        transition: 1s;
+    }
+
+    #contatos {
+        font-family: Helvetica75, sans-serif;
+        font-size: 2vw;
+        transition: 1s;
+        opacity: 0;
+        top: 40%;
+        left: 7%;
+        position: absolute;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        transition: 3s;
+    }
+
+    #menuIcon5 img:hover {
+        opacity: 0;
+        transition: 0.2s;
+    }
+}
+
+/************************************************************************************/
+
+/* mobile version */
+
+@media only screen and (max-width: 760px) {
+
+    /* AREA OF MENU INTERACTIVITY */
+    #interactionArea {
+        display: none;
+        visibility: hidden;
+    }
+
+    #interactionAreaMobile {
+        /*border: 3px solid red;*/
+        position: absolute;
+        width: 98.3%;
+        height: 57vh;
+        left: 0;
+        top: 20vh;
+        transition: 0.2s;
+        overflow: visible;
+        text-align: center;
+        min-height: 600px;
+    }
+
+    /* CANVAS STYLES */
+    #logoSketchMob {
+        position: absolute;
+        /*padding-left: 10%;*/
+        top: -5vh;
+        left: 1.5vw;
+        width: auto;
+        height: 120vw;
+        transition: 0.5s;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    /* MENU ICON STYLES */
+    #menuIcon1Mob {
+        position: absolute;
+        left: -100%;
+        top: 20%;
+        transition: 1s;
+        width: auto;
+        height: auto;
+    }
+
+    #menuIcon1Mob img {
+        transition: 1s;
+        width: 80px;
+        height: auto;
+        position: absolute;
+        left: -80%;
+        top: -80%;
+    }
+
+    #sobreDATMob {
+        font-family: Helvetica75, sans-serif;
+        font-size: 25px;
+        transition: 1s;
+        color: black;
+    }
+
+    /**/
+
+    #menuIcon2Mob {
+        position: absolute;
+        left: -100%;
+        top: 34%;
+        transition: 1s;
+    }
+
+    #menuIcon2Mob img {
+        transition: 1s;
+        width: 80px;
+        height: auto;
+        position: absolute;
+        left: -65%;
+        top: -80%;
+    }
+
+    #edicao2018Mob {
+        font-family: Helvetica75, sans-serif;
+        font-size: 25px;
+        transition: 1s;
+        color: black;
+    }
+
+    /**/
+
+    #menuIcon3Mob {
+        position: absolute;
+        left: -105%;
+        top: 48%;
+        transition: 1s;
+    }
+
+    #menuIcon3Mob img {
+        transition: 1s;
+        width: 80px;
+        height: auto;
+        position: absolute;
+        left: -160%;
+        top: -80%;
+    }
+
+    #localMob {
+        font-family: Helvetica75, sans-serif;
+        font-size: 25px;
+        transition: 1s;
+        color: black;
+    }
+
+    /**/
+
+    #menuIcon4Mob {
+        position: absolute;
+        left: -100%;
+        top: 62%;
+        transition: 1s;
+    }
+
+    #menuIcon4Mob img {
+        transition: 1s;
+        width: 80px;
+        height: auto;
+        position: absolute;
+        left: -54%;
+        top: -80%;
+    }
+
+    #intervenientesMob {
+        font-family: Helvetica75, sans-serif;
+        font-size: 25px;
+        transition: 1s;
+        color: black;
+    }
+
+    /**/
+
+    #menuIcon5Mob {
+        position: absolute;
+        left: -100%;
+        top: 75%;
+        transition: 1s;
+    }
+
+    #menuIcon5Mob img {
+        transition: 1s;
+        width: 80px;
+        height: auto;
+        position: absolute;
+        left: -87%;
+        top: -80%;
+    }
+
+    #contatosMob {
+        font-family: Helvetica75, sans-serif;
+        font-size: 25px;
+        transition: 1s;
+        color: black;
+    }
+
+    /**/
+}
+
+/* Sizes of logo sketch need to be changed for logo to be centered */
+/* Tablet version is necessary */

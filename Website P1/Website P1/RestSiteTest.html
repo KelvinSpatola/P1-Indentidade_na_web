@@ -1,0 +1,232 @@
+<!--By Pedro Tavares, Kelvin Clark and Artem Basok -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DAT</title>
+    <link rel="stylesheet" href="Styles/RestSiteTest.css">
+    <script src="Scripts/LOADED.js"></script>
+    <script src="Scripts/processing.min.js"></script>  <!-- THIS SCRIPT IS A PORT FROM PROCESSING.ORG -->
+    <meta name="viewport" content="width=device-width, initial scale=1">
+</head>
+<body>
+
+<div id="mainContainer">
+
+    <!--************************************HEADER***********************************-->
+
+    <header>
+        <div id="menuSymbol">
+            <div id="firstCircle"></div>
+            <div id="secondCircle"></div>
+            <div id="thirdCircle"></div>
+        </div>
+
+        <nav id="listText">
+            <ul>
+                <li id = "menuIconText1">home</li>
+                <li id = "menuIconText2">sobre</li>
+                <li id = "menuIconText3">edição 2018</li>
+                <li id = "menuIconText4">intervenientes</li>
+                <li id = "menuIconText5">local</li>
+                <li id = "menuIconText6">contatos</li>
+            </ul>
+        </nav>
+
+        <nav id="list">
+            <ul>
+                <li><a id="homeLink"><span id="menuIcon1"><img src="Images/SVG/home.svg"></span></a></li>
+                <li><a id="sobreLink"><span id="menuIcon2"><img src="Images/SVG/sobre1.svg"></span></a></li>
+                <li><a id="edicaoLink"><span id="menuIcon3"><img src="Images/SVG/sobre2.svg"></span></a></li>
+                <li><a id="intervenientesLink"><span id="menuIcon4"><img src="Images/SVG/intervenientes.svg"></span></a>
+                </li>
+                <li><a id="localLink"><span id="menuIcon5"><img src="Images/SVG/local.svg"></span></a></li>
+                <li><a id="contatosLink"><span id="menuIcon6"><img src="Images/SVG/contactos.svg"></span></a></li>
+            </ul>
+        </nav>
+
+        <nav id="listTab">
+            <ul>
+                <li><a id="homeLinkTab">home</a></li>
+                <li><a id="sobreLinkTab">sobre</a></li>
+                <li><a id="edicaoLinkTab">edicao 2018</a></li>
+                <li><a id="intervenientesLinkTab">intervenientes</a></li>
+                <li><a id="localLinkTab">local</a></li>
+                <li><a id="contatosLinkTab">contatos</a></li>
+            </ul>
+        </nav>
+
+        <nav id="listMob">
+            <ul>
+                <li><a id="homeLinkMob">home</a></li>
+                <li><a id="sobreLinkMob">sobre</a></li>
+                <li><a id="edicaoLinkMob">edicao 2018</a></li>
+                <li><a id="intervenientesLinkMob">intervenientes</a></li>
+                <li><a id="localLinkMob">local</a></li>
+                <li><a id="contatosLinkMob">contatos</a></li>
+            </ul>
+        </nav>
+
+        <canvas id="logoSketch" data-processing-sources="LOGO_Black/LOGO_Black.pde"></canvas>
+        <div id="logoText">design <br> art <br> technology</div>
+        <div id="logoInteractionArea"></div>
+
+    </header>
+
+    <!--****************************************************************************-->
+
+    <!--************************************ SOBRE ***********************************-->
+
+    <div id="container">
+
+        <div id="sobre">
+            <h1>sobre</h1>
+            <p id="mainText">
+                "DAT: Design, Arte & Tecnologia" é um ciclo de conferências, conversas e
+                workshops. Que se vai realizar anualmente no âmbito dos cursos de
+                Licenciatura e Mestrado em Design e Multimédia da Faculdade de Ciências
+                e de Tecnologia da Universidade de Coimbra. <br><br> A primeira edição decorrerá
+                em Abril de 2018, e terá a duração de 2 ou 3 dias que poderão ter lugar,
+                em vários locais da cidade de Coimbra, como por exemplo no auditório do
+                Museu da Ciência, no DARQ e no DEI. <br><br>Esta acção de divulgação pública
+                dentro e fora da Faculdade pretende não só mostrar o trabalho de
+                diferentes profissionais cujo trabalho é amplamente reconhecido, como
+                contribuir para a divulgação do cursos, os primeiros nesta área
+                leccionados na Universidade de Coimbra. O programa é constituído por
+                convidados de diversas áreas (Design Gráfico, Tipografia, Design de
+                Interacção, Web Design, Arquitectura, Teoria do Design, Arte, Ilustração,
+                Arte computacional, Cinema, etc.)
+            </p>
+        </div>
+
+    </div>
+
+    <!--****************************************************************************-->
+
+    <!--************************************ EDICAO ***********************************-->
+    <div id="container2">
+
+        <div id="edicaoMainText">
+
+            <h1>edição 2018</h1>
+
+            <p>
+                Este ano vamos estar a tua espera no DAT, que se vai realizar anualmente no âmbito
+                dos cursos de Licenciatura e Mestrado em Design e Multimédia da Faculdade de
+                Ciências e de Tecnologia da Universidade de Coimbra. A primeira edição decorreu em Abril de 2018
+                e esperamos que esse ano vai ser maior, melhor e muito mais educativo.<br><br>
+
+                Visita a nossa página de facebook da edição DAT de 2018, que foi a nossa primeira edição,
+                para mais informação sobre DAT 2018. <br><br><br><br> Segue o link abaixo para acesso á
+                pagina de facebook do DAT 2018... <br><br>
+                <a href="https://www.facebook.com/pg/CicloConversasDesignMultimedia/
+            about/?ref=page_internal"> <i><b>DAT 2018 página de facebook.</b></i></a> <br><br>
+            </p>
+
+        </div>
+
+    </div>
+    <!--****************************************************************************-->
+
+    <!--************************************ INTERVENIENTES ***********************************-->
+    <div id="container3">
+
+        <div id="intervenientesMainText">
+
+            <h1>intervenientes</h1><br>
+
+            <!--mario image and text section-->
+            <img id = "marioImg" src="Images/Intervenientes/Mario.png">
+
+            <p id="mario">
+                <b>11 Março - Mario Feliciano (Typedesigner)</b><br>
+                Workshop type design DEI <br><br>
+            </p>
+
+            <div id = "marioButton">mais</div>
+            <!--***********************************-->
+
+            <!--thomas image and text section-->
+            <img id = "thomasImg" src="Images/Intervenientes/Thomas.png">
+
+            <p id = "thomas">
+                <b>12 Março - Thomas Castro (ArtEZ Institute of the Arts)</b> <br>
+                Conferencia Laboratorio Chimico, Museu da Ciência <br><br>
+            </p>
+
+            <div id = "thomasButton">mais</div>
+            <!--***********************************-->
+
+            <!--luna image and text section-->
+            <img id = "lunaImg" src="Images/Intervenientes/Luna.png">
+
+            <p id = "luna">
+                <b>13 Março - Luna Maurer</b> <br>
+                Workshop DARQ <br><br>
+            </p>
+
+            <div id = "lunaButton">mais</div>
+            <!--***********************************-->
+
+        </div>
+
+    </div>
+    <!--****************************************************************************-->
+
+    <!--************************************ LOCAL***********************************-->
+    <div id="container4">
+
+        <img id="coimbraBGimg" src="Images/Coimbra%20BG/coimbra.png">
+
+        <div id="localMainText">
+
+            <h1>local</h1>
+
+            <p>
+                <b>DARQ (Departamento de Arquitectura)</b> <br>Universidade de Coimbra,
+                R. Colégio Novo, 3000-143 Coimbra. <br><br>
+
+                <b>DEI (Departamento de Engenharia Informática)</b> <br>Universidade de
+                Coimbra, Pólo II - Pinhal de Marrocos, 3030-290 Coimbra. <br><br>
+
+
+                <b>Laboratorio Chimico</b> <br>Universidade de Coimbra, Museu da Ciência
+                3000-272, Coimbramuseudaciencia.org, Tel: 239 854 350.
+            </p>
+
+        </div>
+
+    </div>
+    <!--****************************************************************************-->
+
+    <!--************************************ CONTATOS ***********************************-->
+    <div id="container5">
+
+        <div id="contatosMainText">
+
+            <h1>contatos</h1>
+
+            <p>
+                <b>Nuno Coelho:</b> <br>
+                <a href="https://apps.uc.pt/mypage/faculty/uc26736/pt"><b><i>Segue aqui para mais informação sobre Nuno Coelho!</i></b></a>
+                <br><br><br>
+                <b>Pedro Martins:</b> <br>
+                <a href="https://www.cisuc.uc.pt/people/show/2033"><b><i>Ou segue aqui para mais informação sobre Pedro Martins!</i></b></a>
+                <br><br><br><br><br><br><br><br><br>
+                <a href = "https://www.facebook.com/coimbraDAT/" target = _blank><img src = "Images/Social%20Media/facebookIcon.png" width = 50px height = 50px alt = "Facebook Icon"></a>
+                <a href = "https://www.instagram.com/uc.dat/" target = _blank><img src = "Images/Social%20Media/instagramIcon.png" width = 50px height = 50px alt = "Facebook Icon"></a>
+            </p>
+
+        </div>
+
+    </div>
+    <!--****************************************************************************-->
+
+    <div id="blackBG"></div>
+
+</div>
+
+<script src="Scripts/RestSiteTest.js"></script>
+</body>
+</html>

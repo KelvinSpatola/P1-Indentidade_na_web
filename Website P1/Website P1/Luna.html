@@ -1,0 +1,107 @@
+<!--By Pedro Tavares, Kelvin Clark and Artem Basok -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DAT Luna Maurer</title>
+    <link rel="stylesheet" href="Styles/Interv.css">
+    <script src="Scripts/LOADED.js"></script>
+    <script src="Scripts/processing.min.js"></script>  <!-- THIS SCRIPT IS A PORT FROM PROCESSING.ORG -->
+    <meta name="viewport" content="width=device-width, initial scale=1">
+</head>
+<body>
+
+<div id="mainContainer">
+
+    <!--************************************HEADER***********************************-->
+
+    <header>
+        <div id = "menuSymbol">
+            <div id = "firstCircle"></div>
+            <div id = "secondCircle"></div>
+            <div id = "thirdCircle"></div>
+        </div>
+
+        <nav id="listText">
+            <ul>
+                <li id = "menuIconText1">home</li>
+                <li id = "menuIconText2">sobre</li>
+                <li id = "menuIconText3">edição 2018</li>
+                <li id = "menuIconText4">intervenientes</li>
+                <li id = "menuIconText5">local</li>
+                <li id = "menuIconText6">contatos</li>
+            </ul>
+        </nav>
+
+        <nav id="list">
+            <ul>
+                <li><a id="homeLink"><span id="menuIcon1"><img src="Images/SVG/home.svg"></span></a></li>
+                <li><a id="sobreLink"><span id="menuIcon2"><img src="Images/SVG/sobre1.svg"></span></a></li>
+                <li><a id="edicaoLink"><span id="menuIcon3"><img src="Images/SVG/sobre2.svg"></span></a></li>
+                <li><a id="intervenientesLink"><span id="menuIcon4"><img src="Images/SVG/intervenientes.svg"></span></a></li>
+                <li><a id="localLink"><span id="menuIcon5"><img src="Images/SVG/local.svg"></span></a></li>
+                <li><a id="contatosLink"><span id="menuIcon6"><img src="Images/SVG/contactos.svg"></span></a></li>
+            </ul>
+        </nav>
+
+        <nav id= "listTab">
+            <ul>
+                <li><a id="homeLinkTab">home</a></li>
+                <li><a id="sobreLinkTab">sobre</a></li>
+                <li><a id="edicaoLinkTab">edicao 2018</a></li>
+                <li><a id="intervenientesLinkTab">intervenientes</a></li>
+                <li><a id="localLinkTab">local</a></li>
+                <li><a id="contatosLinkTab">contatos</a></li>
+            </ul>
+        </nav>
+
+        <nav id= "listMob">
+            <ul>
+                <li><a id="homeLinkMob">home</a></li>
+                <li><a id="sobreLinkMob">sobre</a></li>
+                <li><a id="edicaoLinkMob">edicao 2018</a></li>
+                <li><a id="intervenientesLinkMob">intervenientes</a></li>
+                <li><a id="localLinkMob">local</a></li>
+                <li><a id="contatosLinkMob">contatos</a></li>
+            </ul>
+        </nav>
+
+        <canvas id="logoSketch" data-processing-sources="LOGO_Black/LOGO_Black.pde"></canvas>
+        <div id="logoText">design <br> art <br> technology</div>
+        <div id="logoInteractionArea"></div>
+
+    </header>
+
+    <!--****************************************************************************-->
+
+    <!--************************************ INTERVS ***********************************-->
+    <div id="intervs">
+
+        <h1>Luna Maurer</h1>
+        <h3>13 Março - DARQ</h3>
+
+        <img src = "Images/Intervenientes/Luna.png"><br><br>
+
+            <p>
+                 <br><br>
+                Runs
+                the Amsterdam-based design studio Moniker with Roel Wouters. (They founded it in 2012 with Jonathan Puckey.) Moniker “explores the characteristics of technology,
+                how people use it, and how it influences people’s daily lives. "They’ve taught media courses at the Gerrit Rietveld Academy, the Sandberg Institute and at Yale
+                University, and they regularly give workshops and lectures around the world. Moniker, together with Edo Paulus, wrote Conditional Design, a manifesto and
+                “experimental playground” that they have said is “based on the notion that designing a logic-based environment within which results take shape are more interesting
+                and fruitful than a directly designed object.” They tested these ideas during weekly workshops, which were then posted online. The Conditional Design Workbook was
+                published in 2013 by Valiz. Here, Maurer discusses what it means to break down complicated ideas, the importance of having a guiding manifesto, and the difference
+                (or lack thereof) between an artist and a designer.
+            </p>
+
+    </div>
+    <!--****************************************************************************-->
+
+    <div id="blackBG"></div>
+
+</div>
+
+<script src="Scripts/Interv.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!--By Pedro Tavares, Kelvin Clark and Artem Basok -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DAT Mario Feliciano</title>
+    <link rel="stylesheet" href="Styles/Interv.css">
+    <script src="Scripts/LOADED.js"></script>
+    <script src="Scripts/processing.min.js"></script>  <!-- THIS SCRIPT IS A PORT FROM PROCESSING.ORG -->
+    <meta name="viewport" content="width=device-width, initial scale=1">
+</head>
+<body>
+
+<div id="mainContainer">
+
+    <!--************************************HEADER***********************************-->
+
+    <header>
+        <div id = "menuSymbol">
+            <div id = "firstCircle"></div>
+            <div id = "secondCircle"></div>
+            <div id = "thirdCircle"></div>
+        </div>
+
+        <nav id="listText">
+            <ul>
+                <li id = "menuIconText1">home</li>
+                <li id = "menuIconText2">sobre</li>
+                <li id = "menuIconText3">edição 2018</li>
+                <li id = "menuIconText4">intervenientes</li>
+                <li id = "menuIconText5">local</li>
+                <li id = "menuIconText6">contatos</li>
+            </ul>
+        </nav>
+
+        <nav id="list">
+            <ul>
+                <li><a id="homeLink"><span id="menuIcon1"><img src="Images/SVG/home.svg"></span></a></li>
+                <li><a id="sobreLink"><span id="menuIcon2"><img src="Images/SVG/sobre1.svg"></span></a></li>
+                <li><a id="edicaoLink"><span id="menuIcon3"><img src="Images/SVG/sobre2.svg"></span></a></li>
+                <li><a id="intervenientesLink"><span id="menuIcon4"><img src="Images/SVG/intervenientes.svg"></span></a></li>
+                <li><a id="localLink"><span id="menuIcon5"><img src="Images/SVG/local.svg"></span></a></li>
+                <li><a id="contatosLink"><span id="menuIcon6"><img src="Images/SVG/contactos.svg"></span></a></li>
+            </ul>
+        </nav>
+
+        <nav id= "listTab">
+            <ul>
+                <li><a id="homeLinkTab">home</a></li>
+                <li><a id="sobreLinkTab">sobre</a></li>
+                <li><a id="edicaoLinkTab">edicao 2018</a></li>
+                <li><a id="intervenientesLinkTab">intervenientes</a></li>
+                <li><a id="localLinkTab">local</a></li>
+                <li><a id="contatosLinkTab">contatos</a></li>
+            </ul>
+        </nav>
+
+        <nav id= "listMob">
+            <ul>
+                <li><a id="homeLinkMob">home</a></li>
+                <li><a id="sobreLinkMob">sobre</a></li>
+                <li><a id="edicaoLinkMob">edicao 2018</a></li>
+                <li><a id="intervenientesLinkMob">intervenientes</a></li>
+                <li><a id="localLinkMob">local</a></li>
+                <li><a id="contatosLinkMob">contatos</a></li>
+            </ul>
+        </nav>
+
+        <canvas id="logoSketch" data-processing-sources="LOGO_Black/LOGO_Black.pde"></canvas>
+        <div id="logoText">design <br> art <br> technology</div>
+        <div id="logoInteractionArea"></div>
+
+    </header>
+
+    <!--****************************************************************************-->
+
+    <!--************************************ INTERVS ***********************************-->
+    <div id="intervs">
+
+        <h1>Mario Feliciano</h1>
+        <h3>11 Março - DEI</h3>
+
+        <img src = "Images/Intervenientes/Mario.png"><br><br>
+
+            <p id = "Mario">
+                 <br><br>
+                Born in 1969, Mario studied graphic design at IADE (Lisbon) until 1993.
+                Before finishing his
+                degree he started to work as a graphic designer at Surf Portugal magazine, where he stayed there as art director during the next seven years. In 1994 he founded
+                his design studio (Secretonix) that produced a wide range of design projects from editorial to corporate design. After having commissioned one typeface for Adobe
+                (called Strumpf) and after publishing some of his early work in other foundries, in 2001 he creates the Feliciano Type Foundry and starts to publish his own designs
+                and creating custom typefaces for clients around the world. He is a member of ATypI since 1997. In 2006 Mário was the local organiser of the annual conference held
+                in Lisbon. He is also a member of AGI (Alliance Graphique Internationale) since 2009. He is the author of several custom typefaces, such as: Expresso (for the
+                Portuguese weekly newspaper Expresso), Sueca (for the Swedish newspaper Svenska Dagbladet), Majerit (for the Spanish newspaper El País) and BesSans for Banco
+                Espírito Santo. Feliciano's typefaces have been used by a wide range of clients around the world, from big corporations to renowned international publications such
+                as Newsweek, The Sunday Times or Elle Magazine. His most popular typeface is Flama that is used as a customised version on the Portuguese Passport and Citizen Card
+                along with his other typeface Merlo. In the recent years Mário has been working on expanding FTF's library and giving typographic consultancy.
+            </p>
+
+    </div>
+    <!--****************************************************************************-->
+
+    <div id="blackBG"></div>
+
+</div>
+
+<script src="Scripts/Interv.js"></script>
+</body>
+</html>

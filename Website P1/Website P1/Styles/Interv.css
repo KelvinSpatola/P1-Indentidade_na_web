@@ -1,0 +1,538 @@
+/*By Pedro Tavares, Kelvin Clark and Artem Basok */
+
+/* Global styles applied to all screen sizes */
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* scrollbar styles (not applied in IE, firefox and MS edge) */
+::-webkit-scrollbar{
+    width: 13px;
+    background-color: darkgray;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: white;
+    border: 2px solid darkgray;
+    border-radius: 10px;
+}
+/****************************************************************/
+
+/* CONTAINER THAT HOLDS ALL CONTENT ON PAGE */
+#mainContainer {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    /*border: 2px solid blue;*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+/********************************************/
+
+/* Intro scene of page */
+
+#blackBG{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transition: 2s;
+    z-index: 2;
+}
+
+/* Header */
+
+header{
+    /*border-bottom: 3px solid black;*/
+    box-shadow: 0 0 30px 0;
+    background-color: white;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 150px;
+    position:fixed;
+    z-index: 1;
+}
+
+/****************************/
+
+/************ logo styles in header *******************/
+
+#logoInteractionArea{                 /******** Click area for logo to homePage *********/
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 50px;
+    top:20px;
+}
+
+#logoInteractionArea:hover{                 /******** Click area for logo to homePage *********/
+    cursor: pointer;
+}
+
+#logoSketch{
+    position: absolute;
+    left:50px;
+    top:0;
+    height: 100%;
+    width: auto;
+}
+
+#logoText{
+    font-family: Helvetica75, sans-serif;
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    left:180px;
+    top:45px;
+    line-height: 17px;
+}
+
+/**********************************************************/
+
+a:hover{
+    cursor: pointer;
+}
+
+/**************************************/
+
+/* MenuIcon styles of Header */
+
+#menuSymbol{
+    position: absolute;
+    right: 2%;
+    width: 20px;
+    height: auto;
+    top: 55px;
+    margin-right: 50px;
+    text-align: center;
+    /*border: 2px solid red;*/
+}
+
+/***************************************/
+
+#menuSymbol:hover{
+    cursor: pointer;
+}
+
+#firstCircle{
+    background-color: black;
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    margin-bottom: 5px;
+    transform-origin: 5px 20px ;
+    transition: 1s;
+}
+
+#secondCircle {
+    background-color: black;
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    margin-bottom: 5px;
+}
+
+#thirdCircle{
+    background-color: black;
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    margin-bottom: 5px;
+    transform-origin: 5px -100%;
+    transition: 1s;
+}
+
+/******************************/
+
+/* INTERVS */
+#intervs {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    /*border: 2px solid red;*/
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+#intervs h1{
+    font-family: Helvetica75, sans-serif;
+}
+
+#intervs h3{
+    font-family: Helvetica75, sans-serif;
+}
+
+#intervs p{
+    font-family: Helvetica-Light, sans-serif;
+    color: black;
+    text-align: justify;
+}
+/******************************/
+
+/* desktop version */
+
+@media only screen and (min-width: 1200px) {
+
+    /* menuSymbol visibility in desktop */
+    #menuSymbol{
+        visibility: hidden;
+    }
+    /*************************************/
+
+    /* listTab visibility in tablet */
+    #listTab {
+        visibility: hidden;
+    }
+
+    #listMob{
+        visibility: hidden;
+    }
+    /**********************************/
+
+    /* Page List in Header styles */
+    #list{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 96%;
+        top:0;
+        margin-right: 50px;
+        text-align: right;
+    }
+
+    #listText{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 96%;
+        top: 47px;
+        text-align: right;
+        font-family: Helvetica75, sans-serif;
+        font-size: 18px;
+    }
+
+    ul{
+        list-style-type: none;
+    }
+
+    ul li:first-child{
+        margin-left: -0;
+    }
+
+    #list ul li{
+        display: inline;
+        margin-right: 4%;
+    }
+
+    #listText ul li{
+        display: inline;
+        box-sizing: border-box;
+        text-align: center;
+        margin-right: 2.5%;
+        border: 2px solid white;
+    }
+
+    #list li img{
+        width: 60px;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    #menuIcon1{
+        opacity: 0.3;
+        transition: 1s;
+    }
+
+    #menuIconText1{
+        opacity: 0;
+        transition: 1s;
+    }
+
+    #menuIcon2{
+        opacity: 0.3;
+        transition: 1s;
+    }
+
+    #menuIconText2{
+        opacity: 0;
+        transition: 1s;
+    }
+
+    #menuIcon3{
+        opacity: 0.3;
+        transition: 1s;
+    }
+
+    #menuIconText3{
+        opacity: 0;
+        transition: 1s;
+    }
+
+    #menuIcon4{
+        opacity: 0.3;
+        transition: 1s;
+    }
+
+    #menuIconText4{
+        opacity: 0;
+        transition: 1s;
+    }
+
+    #menuIcon5{
+        opacity: 0.3;
+        transition: 1s;
+    }
+
+    #menuIconText5{
+        opacity: 0;
+        transition: 1s;
+    }
+
+    #menuIcon6{
+        opacity: 0.3;
+        transition: 1s;
+    }
+
+    #menuIconText6{
+        opacity: 0;
+        transition: 1s;
+    }
+
+
+    /******************************/
+
+    /* INTERVS */
+    #intervs{
+        width: 100%;
+        height: 100%;
+        left: 10vw;
+        top: 28vh;
+    }
+
+    #intervs h1{
+        font-size: 3vw;
+        text-align: left;
+        margin-left: 12%;
+    }
+
+    #intervs h3{
+        text-align: left;
+        font-size: 1.3vw;
+        margin-top: -2.4%;
+        margin-left: 12%;
+    }
+
+    #intervs p{
+        font-size: 1.2vw;
+        position: absolute;
+        left: 10%;
+        top: 10%;
+        width: 58%;
+        margin-left: 100px;
+    }
+    #intervs img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 10%;
+        height: auto;
+    }
+    /******************************/
+}
+
+/******************************/
+
+/* tablet version */
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+    /* menuSymbol visibility in tablet */
+    #menuSymbol {
+        visibility: visible;
+    }
+    /**********************************/
+
+    /* list visibility in tablet */
+    #list {
+        visibility: hidden;
+    }
+
+    #listText {
+        visibility: hidden;
+    }
+
+    #listMob{
+        visibility: hidden;
+    }
+    /**********************************/
+
+    /* Page List interaction on tablet */
+    #listTab{
+        visibility: visible;
+        position: absolute;
+        left: 110%;
+        top:150px;
+        width: 30%;
+        height: auto;
+        text-align: center;
+        font-family: Helvetica75, sans-serif;
+        font-size: 23px;
+        transition: 1s;
+    }
+
+    ul{
+        list-style-type: none;
+    }
+
+    ul li{
+        background-color: white;
+        border-radius: 20px;
+        margin-bottom: 5%;
+        padding: 2%;
+        box-shadow: 0 0 5px 0;
+    }
+    /******************************/
+
+    /* INTERVS */
+    #intervs{
+        width: 100%;
+        height: 100%;
+        left: 5.5vw;
+        top: 28vh;
+    }
+
+    #intervs h1{
+        text-align: left;
+        margin-left: 33%;
+    }
+
+    #intervs h3{
+        text-align: left;
+        margin-top: -28px;
+        margin-left: 33%;
+    }
+
+    #intervs p{
+        font-size: 14px;
+        position: absolute;
+        top: 10%;
+        width: 80%;
+        left: 5.5vw;
+    }
+    #intervs img{
+        position: absolute;
+        left: 20%;
+        top: 0;
+        width: 100px;
+        height: auto;
+    }
+    /******************************/
+}
+/*************************************/
+
+/* mobile version */
+
+@media only screen and (max-width: 768px) {
+    /******************** Main cont styles ************/
+    #mainContainer{
+        height: 150vh;
+    }
+
+    /******************* Logo styles ******************/
+    #logoSketch{
+        left:20px;
+    }
+
+    #logoText{
+        display:none
+    }
+    /*****************************************************/
+
+    /* menuSymbol visibility in mobile */
+    #menuSymbol {
+        visibility: visible;
+    }
+    /**********************************/
+
+    /* list visibility in mobile */
+    #list {
+        visibility: hidden;
+    }
+
+    #listText {
+        visibility: hidden;
+    }
+
+    #listTab{
+        visibility: hidden;
+    }
+    /**********************************/
+
+    /* Page List interaction on mobile */
+    #listMob{
+        visibility: visible;
+        position: absolute;
+        left: 110%;
+        top:150px;
+        width: 50%;
+        height: auto;
+        text-align: center;
+        font-family: Helvetica75, sans-serif;
+        font-size: 20px;
+        transition: 1s;
+    }
+
+    ul{
+        list-style-type: none;
+    }
+
+    ul li{
+        background-color: white;
+        border-radius: 20px;
+        margin-bottom: 5%;
+        padding: 2%;
+        box-shadow: 0 0 5px 0;
+    }
+    /******************************/
+
+    /* INTERVS */
+    #intervs{
+        width: 100%;
+        height: 100%;
+        left: 5.5vw;
+        top: 28vh;
+    }
+
+    #intervs h1{
+        text-align: center;
+        margin-left: -25px;
+    }
+
+    #intervs h3{
+        text-align: center;
+        margin-top: -28px;
+        margin-left: -25px;
+    }
+
+    #intervs p{
+        font-size: 14px;
+        position: absolute;
+        top: 10%;
+        width: 80%;
+        left: 5.5vw;
+    }
+    #intervs img{
+        display: none;
+    }
+    /******************************/
+}
+/*************************************/

@@ -1,0 +1,1251 @@
+/*By Pedro Tavares, Kelvin Clark and Artem Basok */
+
+/* Global styles applied to all screen sizes */
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* scrollbar styles (not applied in IE, firefox and MS edge) */
+::-webkit-scrollbar{
+    width: 13px;
+    background-color: darkgray;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+    border: 2px solid darkgray;
+    border-radius: 10px;
+}
+/****************************************************************/
+
+/* CONTAINER THAT HOLDS ALL CONTENT ON PAGE */
+#mainContainer {
+    box-sizing: border-box;
+    width: calc(100vw - 13px);
+    height: 500vh;
+    /*border: 2px solid blue;*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+/********************************************/
+
+#container {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    /*border: 2px solid red;*/
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+#container2 {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    /*border-top: 2px solid green;*/
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 100vh;
+    overflow: hidden;
+    padding-top: 150px;
+}
+
+#container3 {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    /*border-top: 2px solid green;*/
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 200vh;
+    overflow: hidden;
+    padding-top: 150px;
+}
+
+
+#container4 {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    /*border-top: 2px solid green;*/
+    position: absolute;
+    left: 0;
+    top: 300vh;
+    overflow: hidden;
+    padding-top: 150px;
+}
+
+#container5 {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    /*border-top: 2px solid green;*/
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 400vh;
+    overflow: hidden;
+    padding-top: 150px;
+}
+
+/* Intro scene of page */
+
+#blackBG{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transition: 2s;
+    z-index: 2;
+}
+
+/* Header */
+
+header{
+    /*border-bottom: 3px solid black;*/
+    box-shadow: 0 0 30px 0;
+    background-color: white;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 150px;
+    position:fixed;
+    z-index: 1;
+}
+
+/****************************/
+
+/************ logo styles in header *******************/
+
+#logoInteractionArea{                 /******** Click area for logo to homePage *********/
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 50px;
+    top:20px;
+}
+
+#logoInteractionArea:hover{                 /******** Click area for logo to homePage *********/
+    cursor: pointer;
+}
+
+#logoSketch{
+    position: absolute;
+    left:50px;
+    top:0;
+    height: 100%;
+    width: auto;
+}
+
+#logoText{
+    font-family: Helvetica75, sans-serif;
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    left:180px;
+    top:45px;
+    line-height: 17px;
+}
+
+/**********************************************************/
+
+a:hover{
+    cursor: pointer;
+}
+
+/**************************************/
+
+/* MenuIcon styles of Header */
+
+#menuSymbol{
+    position: absolute;
+    right: 2%;
+    width: 20px;
+    height: auto;
+    top: 55px;
+    margin-right: 50px;
+    text-align: center;
+    /*border: 2px solid red;*/
+}
+
+/***************************************/
+
+#menuSymbol:hover{
+    cursor: pointer;
+}
+
+#firstCircle{
+    background-color: black;
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    margin-bottom: 5px;
+    transform-origin: 5px 20px ;
+    transition: 1s;
+}
+
+#secondCircle {
+    background-color: black;
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    margin-bottom: 5px;
+}
+
+#thirdCircle{
+    background-color: black;
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    margin-bottom: 5px;
+    transform-origin: 5px -100%;
+    transition: 1s;
+}
+
+/******************************/
+
+/* SOBRE */
+#sobre{
+    box-sizing: border-box;
+    position:absolute;
+    overflow: hidden;
+}
+
+#sobre h1{
+    font-family: Helvetica75, sans-serif;
+}
+
+#mainText{
+    font-family: Helvetica-Light, sans-serif;
+    color: black;
+    text-align: justify;
+}
+/******************************/
+
+/* EDICAO */
+#edicaoMainText{
+    box-sizing: border-box;
+    position:absolute;
+    overflow: hidden;
+}
+
+#edicaoMainText h1{
+    font-family: Helvetica75, sans-serif;
+}
+
+#edicaoMainText p{
+    font-family: Helvetica-Light, sans-serif;
+    color: black;
+    text-align: justify;
+}
+
+#edicaoMainText a{
+    color: darkgray;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#edicaoMainText a:hover{
+    color: red;
+}
+
+#edicaoMainText a:active{
+    color: red;
+}
+/******************************/
+
+/* INTERVENIENTES */
+#intervenientesMainText{
+    box-sizing: border-box;
+    position:absolute;
+    overflow: hidden;
+}
+
+#intervenientesMainText h1{
+    font-family: Helvetica75, sans-serif;
+}
+
+#intervenientesMainText p{
+    font-family: Helvetica-Light, sans-serif;
+    color: black;
+    text-align: justify;
+}
+
+#intervenientesMainText img{
+    width: 300px;
+    border-radius: 100%;
+    height: auto;
+}
+
+#intervenientesMainText #marioButton:hover{
+    cursor: pointer;
+}
+#intervenientesMainText #thomasButton:hover{
+    cursor: pointer;
+}
+#intervenientesMainText #lunaButton:hover{
+    cursor: pointer;
+}
+/******************************/
+
+/* LOCAL */
+#localMainText{
+    box-sizing: border-box;
+    position:absolute;
+    overflow: hidden;
+}
+
+#localMainText h1{
+    font-family: Helvetica75, sans-serif;
+    background-color: white;
+}
+
+#coimbraBGimg{
+    position: fixed;
+    width: 100%;
+    height: auto;
+    top: 30vh;
+    left: 0;
+    z-index: -1;
+    /*min-width: 1200px;*/
+}
+
+#localMainText p{
+    font-family: Helvetica-Light, sans-serif;
+    color: black;
+    text-align: justify;
+    background-color: white;
+}
+/******************************/
+
+/* CONTATOS */
+#contatosMainText{
+    box-sizing: border-box;
+    position:absolute;
+    overflow: hidden;
+}
+
+#contatosMainText h1{
+    font-family: Helvetica75, sans-serif;
+}
+
+#contatosMainText p{
+    font-family: Helvetica-Light, sans-serif;
+    color: black;
+    text-align: justify;
+}
+
+#contatosMainText a{
+    color: darkgray;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+
+#contatosMainText a:hover{
+    color: red;
+}
+
+#contatosMainText a:active{
+    color: red;
+}
+/******************************/
+
+/* desktop version */
+
+@media only screen and (min-width: 1200px) {
+
+    /* menuSymbol visibility in desktop */
+    #menuSymbol{
+        visibility: hidden;
+    }
+    /*************************************/
+
+    /* listTab visibility in tablet */
+    #listTab {
+        visibility: hidden;
+    }
+
+    #listMob{
+        visibility: hidden;
+    }
+    /**********************************/
+
+    /* Page List in Header styles */
+    #list{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 96%;
+        top:0;
+        margin-right: 50px;
+        text-align: right;
+    }
+
+    #listText{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 96%;
+        top: 47px;
+        text-align: right;
+        font-family: Helvetica75, sans-serif;
+        font-size: 18px;
+    }
+
+    ul{
+        list-style-type: none;
+    }
+
+    ul li:first-child{
+        margin-left: -0;
+    }
+
+    #list ul li{
+        display: inline;
+        margin-right: 4%;
+    }
+
+    #listText ul li{
+        display: inline;
+        box-sizing: border-box;
+        text-align: center;
+        margin-right: 2.5%;
+        border: 2px solid white;
+    }
+
+    #list li img{
+        width: 60px;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    #menuIcon1{
+        opacity: 0.3;
+        transition: 1s;
+    }
+
+    #menuIconText1{
+        opacity: 0;
+        transition: 1s;
+    }
+
+    #menuIcon2{
+        opacity: 0.3;
+        transition: 1s;
+    }
+
+    #menuIconText2{
+        opacity: 0;
+        transition: 1s;
+    }
+
+    #menuIcon3{
+        opacity: 0.3;
+        transition: 1s;
+    }
+
+    #menuIconText3{
+        opacity: 0;
+        transition: 1s;
+    }
+
+    #menuIcon4{
+        opacity: 0.3;
+        transition: 1s;
+    }
+
+    #menuIconText4{
+        opacity: 0;
+        transition: 1s;
+    }
+
+    #menuIcon5{
+        opacity: 0.3;
+        transition: 1s;
+    }
+
+    #menuIconText5{
+        opacity: 0;
+        transition: 1s;
+    }
+
+    #menuIcon6{
+        opacity: 0.3;
+        transition: 1s;
+    }
+
+    #menuIconText6{
+        opacity: 0;
+        transition: 1s;
+    }
+
+    /******************************/
+
+    /* SOBRE */
+    #sobre{
+        width: 50vw;
+        height: auto;
+        left: 22vw;
+        top: 26vh;
+    }
+
+    #sobre h1{
+        font-size: 3vw;
+        text-align: left;
+    }
+
+    #mainText{
+        font-size: 1.2vw;
+        margin-left: 100px;
+    }
+    /******************************/
+
+    /* EDICAO  */
+    #edicaoMainText{
+        width: 50vw;
+        height: auto;
+        left: 22vw;
+        top: 26vh;
+    }
+
+    #edicaoMainText h1{
+        font-size: 3vw;
+        text-align: left;
+    }
+
+    #edicaoMainText p{
+        font-size: 1.2vw;
+        margin-left: 100px;
+    }
+    /******************************/
+
+    /* INTERVENIENTES */
+    #intervenientesMainText{
+        width: 50vw;
+        height: auto;
+        left: 22vw;
+        top: 26vh;
+    }
+
+    #intervenientesMainText h1{
+        font-size: 3vw;
+        text-align: left;
+    }
+
+    #intervenientesMainText #mario{
+        font-size: 1.2vw;
+        margin-left: 120px;
+        margin-top: -70px;
+        /*display: inline-block;*/
+    }
+
+    #intervenientesMainText #thomas{
+        font-size: 1.2vw;
+        margin-left: 120px;
+        margin-top: -70px;
+        /*display: inline-block;*/
+    }
+
+    #intervenientesMainText #luna{
+        font-size: 1.2vw;
+        margin-left: 120px;
+        margin-top: -70px;
+        /*display: inline-block;*/
+    }
+
+    #intervenientesMainText #marioImg{
+        /*position: absolute;*/
+        /*top: 105px;*/
+        /*left: 5%;*/
+        width: 100px;
+        height: auto;
+    }
+
+    #intervenientesMainText #thomasImg{
+        /*position: absolute;*/
+        /*top: 105px;*/
+        /*left: 5%;*/
+        width: 100px;
+        height: auto;
+    }
+
+    #intervenientesMainText #lunaImg{
+        /*position: absolute;*/
+        /*top: 105px;*/
+        /*left: 5%;*/
+        width: 100px;
+        height: auto;
+    }
+
+    #intervenientesMainText #marioButton{
+        font-family: Helvetica75, sans-serif;
+        font-size: 1.4vw;
+        box-sizing: border-box;
+        padding: 8px 10px 10px;
+        border-radius: 20px;
+        text-align: center;
+        position: absolute;
+        top: 35%;
+        right: 0;
+        background-color: black;
+        color: white;
+        transition: 0.5s;
+    }
+
+    #intervenientesMainText #marioButton:hover{
+        background-color: black;
+        color: red;
+        cursor: pointer;
+        transform: rotate(360deg);
+    }
+
+    #intervenientesMainText #thomasButton{
+        font-family: Helvetica75, sans-serif;
+        font-size: 1.4vw;
+        box-sizing: border-box;
+        padding: 8px 10px 10px;
+        border-radius: 20px;
+        text-align: center;
+        position: absolute;
+        top: 58%;
+        right: 0;
+        background-color: black;
+        color: white;
+        transition: 0.5s;
+    }
+
+    #intervenientesMainText #thomasButton:hover{
+        background-color: black;
+        color: red;
+        cursor: pointer;
+        transform: rotate(360deg);
+    }
+
+    #intervenientesMainText #lunaButton{
+        font-family: Helvetica75, sans-serif;
+        font-size: 1.4vw;
+        box-sizing: border-box;
+        padding: 8px 10px 10px;
+        border-radius: 20px;
+        text-align: center;
+        position: absolute;
+        top: 81%;
+        right: 0;
+        background-color: black;
+        color: white;
+        transition: 0.5s;
+    }
+
+    #intervenientesMainText #lunaButton:hover{
+        background-color: black;
+        color: red;
+        cursor: pointer;
+        transform: rotate(360deg);
+    }
+    /******************************/
+
+    /* LOCAL  */
+    #localMainText{
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        top: 0;
+    }
+
+    #localMainText h1{
+        font-size: 3vw;
+        text-align: left;
+        margin-top: 0;
+        padding-left: 22vw;
+        padding-top: 28vh;
+        padding-bottom: 5vh;
+        border-bottom: 3px solid black;
+    }
+
+    #localMainText p{
+        font-size: 1.2vw;
+        padding-left: calc(22vw + 100px);
+        margin-top: 25vh;
+        padding-top: 5vh;
+        padding-bottom: 11vh;
+        border-top: 3px solid black;
+        text-align: left;
+    }
+    /******************************/
+
+    /* CONTATOS */
+    #contatosMainText{
+        width: 50vw;
+        height: auto;
+        left: 22vw;
+        top: 26vh;
+    }
+
+    #contatosMainText h1{
+        font-size: 3vw;
+        text-align: left;
+    }
+
+    #contatosMainText p{
+        font-size: 1.2vw;
+        margin-left: 100px;
+    }
+
+    #contatosMainText img{
+        float: right;
+    }
+    /******************************/
+}
+
+/******************************/
+
+/* tablet version */
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+    /* menuSymbol visibility in tablet */
+    #menuSymbol {
+        visibility: visible;
+    }
+    /**********************************/
+
+    /* list visibility in tablet */
+    #list {
+        visibility: hidden;
+    }
+
+    #listText {
+        visibility: hidden;
+    }
+
+    #listMob{
+        visibility: hidden;
+    }
+    /**********************************/
+
+    /* Page List interaction on tablet */
+    #listTab{
+        visibility: visible;
+        position: absolute;
+        left: 110%;
+        top:150px;
+        width: 30%;
+        height: auto;
+        text-align: center;
+        font-family: Helvetica75, sans-serif;
+        font-size: 23px;
+        transition: 1s;
+    }
+
+    ul{
+        list-style-type: none;
+    }
+
+    ul li{
+        background-color: white;
+        border-radius: 20px;
+        margin-bottom: 5%;
+        padding: 2%;
+        box-shadow: 0 0 5px 0;
+    }
+    /******************************/
+
+    /* SOBRE */
+    #sobre{
+        width: 80vw;
+        height: auto;
+        left: 10vw;
+        top: 26vh;
+    }
+
+    #sobre h1{
+        text-align: center;
+    }
+
+    #mainText{
+        font-size: 17px;
+        margin-left: 10px;
+    }
+    /******************************/
+
+    /* EDICAO */
+    #edicaoMainText{
+        width: 80vw;
+        height: auto;
+        left: 10vw;
+        top: 26vh;
+    }
+
+    #edicaoMainText h1{
+        text-align: center;
+    }
+
+    #edicaoMainText p{
+        font-size: 17px;
+        margin-left: 10px;
+    }
+    /******************************/
+
+    /* INTERVENIENTES */
+    #intervenientesMainText{
+        width: 80vw;
+        height: auto;
+        left: 10vw;
+        top: 26vh;
+    }
+
+    #intervenientesMainText h1{
+        text-align: center;
+    }
+
+    #intervenientesMainText #mario{
+        font-size: 17px;
+        margin-left: 120px;
+        margin-top: -70px;
+        /*display: inline-block;*/
+    }
+
+    #intervenientesMainText #thomas{
+        font-size: 17px;
+        margin-left: 120px;
+        margin-top: -70px;
+        /*display: inline-block;*/
+    }
+
+    #intervenientesMainText #luna{
+        font-size: 17px;
+        margin-left: 120px;
+        margin-top: -70px;
+        /*display: inline-block;*/
+    }
+
+    #intervenientesMainText #marioImg{
+        /*position: absolute;*/
+        /*top: 105px;*/
+        /*left: 5%;*/
+        width: 100px;
+        height: auto;
+    }
+
+    #intervenientesMainText #thomasImg{
+        /*position: absolute;*/
+        /*top: 105px;*/
+        /*left: 5%;*/
+        width: 100px;
+        height: auto;
+    }
+
+    #intervenientesMainText #lunaImg{
+        /*position: absolute;*/
+        /*top: 105px;*/
+        /*left: 5%;*/
+        width: 100px;
+        height: auto;
+    }
+
+    #intervenientesMainText #marioButton{
+        font-family: Helvetica75, sans-serif;
+        font-size: 17px;
+        box-sizing: border-box;
+        padding: 8px 10px 10px;
+        border-radius: 20px;
+        text-align: center;
+        position: absolute;
+        top: 35%;
+        right: 0;
+        background-color: black;
+        color: white;
+        transition: 0.5s;
+    }
+
+    #intervenientesMainText #marioButton:active{
+        background-color: black;
+        color: red;
+        cursor: pointer;
+        transform: rotate(360deg);
+    }
+
+    #intervenientesMainText #thomasButton{
+        font-family: Helvetica75, sans-serif;
+        font-size: 17px;
+        box-sizing: border-box;
+        padding: 8px 10px 10px;
+        border-radius: 20px;
+        text-align: center;
+        position: absolute;
+        top: 58%;
+        right: 0;
+        background-color: black;
+        color: white;
+        transition: 0.5s;
+    }
+
+    #intervenientesMainText #thomasButton:active{
+        background-color: black;
+        color: red;
+        cursor: pointer;
+        transform: rotate(360deg);
+    }
+
+    #intervenientesMainText #lunaButton{
+        font-family: Helvetica75, sans-serif;
+        font-size: 17px;
+        box-sizing: border-box;
+        padding: 8px 10px 10px;
+        border-radius: 20px;
+        text-align: center;
+        position: absolute;
+        top: 81%;
+        right: 0;
+        background-color: black;
+        color: white;
+        transition: 0.5s;
+    }
+
+    #intervenientesMainText #lunaButton:active{
+        background-color: black;
+        color: red;
+        cursor: pointer;
+        transform: rotate(360deg);
+    }
+    /******************************/
+
+    /* LOCAL  */
+    #localMainText{
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        top: 0;
+    }
+
+    #coimbraBGimg{
+        top: 40vh;
+    }
+
+    #localMainText h1{
+        text-align: center;
+        margin-top: 0;
+        padding-left: 0;
+        padding-top: 28vh;
+        padding-bottom: 5vh;
+        border-bottom: 3px solid black;
+    }
+
+    #localMainText p{
+        margin-top: 25vh;
+        padding-top: 5vh;
+        padding-bottom: 10vh;
+        border-top: 3px solid black;
+        text-align: center;
+    }
+    /******************************/
+
+    /* CONTATOS */
+    #contatosMainText{
+        width: 80vw;
+        height: auto;
+        left: 10vw;
+        top: 26vh;
+    }
+
+    #contatosMainText h1{
+        text-align: center;
+    }
+
+    #contatosMainText p{
+        font-size: 17px;
+        margin-left: 10px;
+        text-align: center;
+    }
+    /******************************/
+}
+/*************************************/
+
+/* mobile version */
+
+@media only screen and (max-width: 768px) {
+
+    /******************* Logo styles ******************/
+    #logoSketch{
+        left:20px;
+    }
+
+    #logoText{
+        display:none
+    }
+    /*****************************************************/
+
+    /* menuSymbol visibility in mobile */
+    #menuSymbol {
+        visibility: visible;
+    }
+    /**********************************/
+
+    /* list visibility in mobile */
+    #list {
+        visibility: hidden;
+    }
+
+    #listText {
+        visibility: hidden;
+    }
+
+    #listTab{
+        visibility: hidden;
+    }
+    /**********************************/
+
+    /* Page List interaction on mobile */
+    #listMob{
+        visibility: visible;
+        position: absolute;
+        left: 110%;
+        top:150px;
+        width: 50%;
+        height: auto;
+        text-align: center;
+        font-family: Helvetica75, sans-serif;
+        font-size: 20px;
+        transition: 1s;
+    }
+
+    ul{
+        list-style-type: none;
+    }
+
+    ul li{
+        background-color: white;
+        border-radius: 20px;
+        margin-bottom: 5%;
+        padding: 2%;
+        box-shadow: 0 0 5px 0;
+    }
+    /******************************/
+
+    /* SOBRE */
+    #sobre{
+        width: 80vw;
+        height: auto;
+        left: 10vw;
+        top: 26vh;
+    }
+
+    #sobre h1{
+        text-align: center;
+    }
+
+    #mainText{
+        font-size: 13px;
+        margin-left: 10px;
+    }
+    /******************************/
+
+    /* EDICAO */
+    #edicaoMainText{
+        width: 80vw;
+        height: auto;
+        left: 10vw;
+        top: 26vh;
+    }
+
+    #edicaoMainText h1{
+        text-align: center;
+    }
+
+    #edicaoMainText p{
+        font-size: 13px;
+        margin-left: 10px;
+    }
+    /******************************/
+
+    /* INTERVENIENTES */
+    #intervenientesMainText{
+        width: 90vw;
+        height: auto;
+        left: 20px;
+        top: 26vh;
+    }
+
+    #intervenientesMainText h1{
+        text-align: center;
+    }
+
+    #intervenientesMainText #mario{
+        font-size: 13px;
+        margin-left: 80px;
+        margin-top: -50px;
+        width: 60%;
+        text-align: left;
+        /*display: inline-block;*/
+    }
+
+    #intervenientesMainText #thomas{
+        font-size: 13px;
+        margin-left: 80px;
+        margin-top: -50px;
+        width: 60%;
+        text-align: left;
+        /*display: inline-block;*/
+    }
+
+    #intervenientesMainText #luna{
+        font-size: 13px;
+        margin-left: 80px;
+        margin-top: -50px;
+        width: 60%;
+        text-align: left;
+        /*display: inline-block;*/
+    }
+
+    #intervenientesMainText #marioImg{
+        /*position: absolute;*/
+        /*top: 105px;*/
+        /*left: 5%;*/
+        width: 60px;
+        height: auto;
+    }
+
+    #intervenientesMainText #thomasImg{
+        /*position: absolute;*/
+        /*top: 105px;*/
+        /*left: 5%;*/
+        width: 60px;
+        height: auto;
+    }
+
+    #intervenientesMainText #lunaImg{
+        /*position: absolute;*/
+        /*top: 105px;*/
+        /*left: 5%;*/
+        width: 60px;
+        height: auto;
+    }
+
+    #intervenientesMainText #marioButton{
+        font-family: Helvetica75, sans-serif;
+        font-size: 13px;
+        box-sizing: border-box;
+        padding: 8px 10px 10px;
+        border-radius: 20px;
+        text-align: center;
+        position: absolute;
+        top: 35%;
+        right: 0;
+        background-color: black;
+        color: white;
+        transition: 0.5s;
+    }
+
+    #intervenientesMainText #marioButton:active{
+        background-color: black;
+        color: red;
+        cursor: pointer;
+        transform: rotate(360deg);
+    }
+
+    #intervenientesMainText #thomasButton{
+        font-family: Helvetica75, sans-serif;
+        font-size: 13px;
+        box-sizing: border-box;
+        padding: 8px 10px 10px;
+        border-radius: 20px;
+        text-align: center;
+        position: absolute;
+        top: 58%;
+        right: 0;
+        background-color: black;
+        color: white;
+        transition: 0.5s;
+    }
+
+    #intervenientesMainText #thomasButton:active{
+        background-color: black;
+        color: red;
+        cursor: pointer;
+        transform: rotate(360deg);
+    }
+
+    #intervenientesMainText #lunaButton{
+        font-family: Helvetica75, sans-serif;
+        font-size: 13px;
+        box-sizing: border-box;
+        padding: 8px 10px 10px;
+        border-radius: 20px;
+        text-align: center;
+        position: absolute;
+        top: 81%;
+        right: 0;
+        background-color: black;
+        color: white;
+        transition: 0.5s;
+    }
+
+    #intervenientesMainText #lunaButton:active{
+        background-color: black;
+        color: red;
+        cursor: pointer;
+        transform: rotate(360deg);
+    }
+    /******************************/
+
+    /* LOCAL  */
+    #localMainText{
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        top: 0;
+    }
+
+    #coimbraBGimg{
+        position: absolute;
+        top: 40vh;
+    }
+
+    #localMainText h1{
+        text-align: center;
+        margin-top: 0;
+        padding-left: 0;
+        padding-top: 28vh;
+        padding-bottom: 5vh;
+        border-bottom: 3px solid black;
+    }
+
+    #localMainText p{
+        font-size: 13px;
+        margin-top: 25vh;
+        padding: 5vh 3vw 10vh;
+        border-top: 3px solid black;
+        text-align: center;
+    }
+    /******************************/
+
+    /* CONTATOS */
+    #contatosMainText{
+        width: 80vw;
+        height: auto;
+        left: 10vw;
+        top: 26vh;
+    }
+
+    #contatosMainText h1{
+        text-align: center;
+    }
+
+    #contatosMainText p{
+        font-size: 13px;
+        margin-left: 10px;
+        text-align: center;
+    }
+    /******************************/
+}
+/*************************************/
